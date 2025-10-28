@@ -1,0 +1,22 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: healthcare-appointment-system
+  
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/healthcare_appointments
+      auto-index-creation: true
+
+jwt:
+  secret: MySecretKeyForJWTTokenGenerationAndValidationPurposes123
+  expiration: 86400000  # 24 hours in milliseconds
+
+logging:
+  level:
+    org.springframework.security: DEBUG
+    org.springframework.web: INFO
+
+
